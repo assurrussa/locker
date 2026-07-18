@@ -16,7 +16,9 @@ trap 'rm -rf "$probe_dir"' EXIT HUP INT TERM
 
 cd "$probe_dir"
 go mod init example.com/locker-published-consumer
-go get "github.com/assurrussa/locker@$version"
+go get \
+	"github.com/assurrussa/locker@$version" \
+	"github.com/assurrussa/locker/redis@$version"
 
 cat > consumer_test.go <<'EOF'
 package consumer

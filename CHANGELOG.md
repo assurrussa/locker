@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and the project intends to use Semantic Versioning after publication.
 
+## [Unreleased]
+
+### Fixed
+
+- Published-consumer probe fetches both supported package paths before
+  compiling the clean consumer module.
+
 ## [0.1.0] - 2026-07-18
 
 ### Added

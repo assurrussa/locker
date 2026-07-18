@@ -1,5 +1,17 @@
 # Implementation notes
 
+## 2026-07-18 — v0.1.0 publication and post-tag verification
+
+- Annotated tag `v0.1.0` and the public GitHub Release were published from
+  release commit `55a52d42b038649eb09b190107aead028c678cc5` after every GitHub
+  Actions job passed on that exact commit.
+- The first post-tag probe downloaded the published module but exposed a probe
+  bug: adding only the root package did not populate checksums required by the
+  separately imported `/redis` package.
+- The probe now explicitly gets both supported import paths at the exact tag.
+  A rerun with `GOWORK=off`, a fresh consumer module, and isolated Go caches
+  passed against the published `v0.1.0` module.
+
 ## 2026-07-18 — v0.1.0 release preparation
 
 - Publication under the MIT License with
