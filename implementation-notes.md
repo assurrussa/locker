@@ -1,5 +1,19 @@
 # Implementation notes
 
+## 2026-07-18 — v0.1.0 release preparation
+
+- Publication under the MIT License with
+  `Copyright (c) 2026 assurrussa` was explicitly confirmed before release.
+- Added the canonical license text, synchronized the English and Russian
+  public documentation, and replaced the changelog's `Unreleased` marker with
+  the release date.
+- The resulting release commit is the intended `v0.1.0` tag target after its
+  exact GitHub Actions run passes. The clean published-consumer probe remains
+  a required post-tag verification.
+- Local `make verify` passed. The default Go 1.26.3 vulnerability scan exposed
+  two fixed standard-library advisories; the required Go 1.26.5 scan then
+  completed with `No vulnerabilities found`, matching the CI security gate.
+
 ## Lease-oriented public API decision
 
 - This decision supersedes the earlier pre-release `Handle` and

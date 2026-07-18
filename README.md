@@ -235,3 +235,7 @@ probe is intentionally a post-tag gate:
 ```sh
 scripts/check-published-consumer.sh v0.1.0
 ```
+
+## License
+
+Locker is available under the [MIT License](LICENSE).

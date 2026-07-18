@@ -186,4 +186,8 @@ make verify
 LOCKER_REDIS_ADDRS=127.0.0.1:6379,127.0.0.1:6380 make test-integration-race
 ```
 
-Полный release gate описан в [release-checklist.md](release-checklist.md).
+Полные release-gates описаны в [CONTRIBUTING.md](../CONTRIBUTING.md).
+
+## Лицензия
+
+Locker распространяется по [лицензии MIT](../LICENSE).
